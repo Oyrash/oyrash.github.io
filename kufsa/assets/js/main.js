@@ -43,12 +43,13 @@
 					e.preventDefault();
 
 				// Deactivate all links.
-					$nav_a.removeClass('active');
+					$nav_a.removeClass('active')
+					.addClass('active-locked');
 
 				// Activate link *and* lock it (so Scrollex doesn't try to activate other links as we're scrolling to this one's section).
 					$this
-						.addClass('active')
-						.addClass('active-locked');
+						.addClass('active');
+						
 
 			})
 			.each(function() {
